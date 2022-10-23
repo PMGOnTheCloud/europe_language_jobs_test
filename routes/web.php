@@ -1,5 +1,7 @@
 <?php
 
+
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,7 @@
 |
 */
 
-Route::get('/', function () {
+// The idea is that all the routing on the web is derived to the VUE ROUTER
+Route::fallback(function () {
     return view('welcome');
 });

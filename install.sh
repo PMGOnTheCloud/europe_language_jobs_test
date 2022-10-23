@@ -30,3 +30,6 @@ nvm install 10 && nvm use 10 && nvm alias default 10
 
 # Installs gulp-cli globally
 npm install --global gulp-cli
+
+# Copy .env.example to .env and generate key
+cp .env.example .env && php artisan key:generate
