@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 // The idea is that all the routing on the web is derived to the VUE ROUTER
-Route::fallback(function () {
+Route::get('/', function () {
     return view('welcome');
 });
